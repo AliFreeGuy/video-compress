@@ -40,7 +40,9 @@ INSTALLED_APPS = [
 
 
     'accounts.apps.AccountsConfig',
+    'vidcompressbot.apps.VidcompressbotConfig'
     'core.apps.CoreConfig' ,
+
 
 
 ]
