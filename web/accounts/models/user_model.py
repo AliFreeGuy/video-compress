@@ -20,11 +20,7 @@ class User(AbstractBaseUser , PermissionsMixin):
     def __str__(self) -> str:
         return f'{self.chat_id} - {self.full_name}'
     
-    def has_perm(self, perm, obj=None):
-        return True
 
-    def has_module_perms(self, app_label):
-        return True
     
 
     @property
