@@ -1,1 +1,2 @@
 from vidcompressbot.models.user_vidcompressbot_model import UserVid
+from vidcompressbot.models.send_message_model import SendMessageModel
