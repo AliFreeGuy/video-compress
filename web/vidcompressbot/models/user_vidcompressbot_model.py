@@ -10,5 +10,5 @@ class UserVid(models.Model):
 
 
     def __str__(self) -> str:
-        return self.user
+        return str(self.user)
     

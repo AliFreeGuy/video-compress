@@ -132,3 +132,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # custom user model
 AUTH_USER_MODEL = 'accounts.User'  # با توجه به مسیر مدل یوزر شما
+
+
+
+
+
+
+# celery setting
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+CELERY_TIMEZONE = 'UTC'

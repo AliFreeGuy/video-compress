@@ -8,7 +8,7 @@ class BotModel(models.Model):
     token = models.CharField(max_length= 128 , unique = True)
 
     def __str__(self) -> str:
-        return self.name
+        return str(self.name)
     
 
 

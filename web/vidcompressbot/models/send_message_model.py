@@ -9,4 +9,4 @@ class SendMessageModel(models.Model):
     creation = models.DateTimeField(auto_now_add = True)
 
     def __str__(self):
-        return self.message[:30]
+        return str(self.message[:30])
