@@ -1,0 +1,1 @@
+from vidcompressbot.models.user_vidcompressbot_model import UserVid
