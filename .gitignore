@@ -1,3 +1,11 @@
+
+
+*.pyc
+__pycache__/
+*.pyo
+*.pyc
+db.sqlite3
+/migrations/
 # Created by https://www.toptal.com/developers/gitignore/api/python,django,visualstudio,venv
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,django,visualstudio,venv
 
