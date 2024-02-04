@@ -12,6 +12,7 @@ from rest_framework.authentication import TokenAuthentication
 class VidSettingAPIView(APIView):
     authentication_classes = [TokenAuthentication ,]
     permission_classes = [permissions.IsAuthenticated, IsAdminUser]
+    
     def get(self, request, *args, **kwargs):
         vid_settings = VidSettingModel.objects.first()
         serializer = VidSettingSerializer(vid_settings)
