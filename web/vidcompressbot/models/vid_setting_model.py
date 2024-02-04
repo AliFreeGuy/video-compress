@@ -14,6 +14,8 @@ class VidSettingModel(models.Model):
     help_text = models.TextField(default = 'خالی' )
     video_compressor_status = models.BooleanField(default = True)
     video_compressor_text = models.TextField(default = 'خالی')
+    start_text = models.TextField(default = 'خالی' )
+    restrict_saving_content = models.BooleanField(default = False)
 
 
 
