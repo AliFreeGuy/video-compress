@@ -1,7 +1,14 @@
 from rest_framework import serializers
 from vidcompressbot.models import VidSettingModel
 from accounts.models import User
-from vidcompressbot.models import SubVidModel
+from vidcompressbot.models import SubVidModel , VidPlanModel
+
+
+
+class VidPlanSerializer(serializers.ModelSerializer):
+    class Meta :
+        model = VidPlanModel
+        fields = '__all__'
 
 
 class VidSettingSerializer(serializers.ModelSerializer):
