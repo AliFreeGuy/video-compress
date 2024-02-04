@@ -1,0 +1,1 @@
+from .setting_apiview import VidSettingAPIView
