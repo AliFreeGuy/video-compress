@@ -1,6 +1,6 @@
 from django.contrib import admin
 from vidcompressbot.models.user_vidcompressbot_model import UserVid
-from vidcompressbot.models import VidPlanModel , SubVidModel
+from vidcompressbot.models import VidPlanModel , SubVidModel , VidSettingModel
 
 admin.site.register(UserVid)
 from .models import SendMessageModel
@@ -15,3 +15,4 @@ admin.site.register(SendMessageModel, SendMessageModelAdmin)
 
 admin.site.register(VidPlanModel)
 admin.site.register(SubVidModel)
+admin.site.register(VidSettingModel)
