@@ -9,14 +9,14 @@ class CustomUserAdmin(UserAdmin):
     model = User
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
-    list_display = ('chat_id', 'full_name', 'is_admin', 'is_active','is_superuser', 'creation')
+    list_display = ('chat_id', 'full_name', 'is_admin', 'is_active','is_superuser','creation')
     list_filter = ('is_admin', 'is_active')
     search_fields = ('chat_id', 'full_name')
     ordering = ('-creation',)
 
     fieldsets = (
         (None, {'fields': ('chat_id', 'full_name', 'password')}),
-        ('Permissions', {'fields': ('is_admin', 'is_active','is_superuser')}),
+        ('Permissions', {'fields': ('is_admin', 'is_active','is_superuser','groups',)}),
     )
 
     search_fields = ['chat_id', 'full_name']
