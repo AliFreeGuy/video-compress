@@ -11,3 +11,9 @@ class UserVid(models.Model):
     def __str__(self) -> str:
         return str(self.user)
     
+
+    
+    class Meta :
+
+        verbose_name = "Vid Users"
+        verbose_name_plural = "Vid Users"

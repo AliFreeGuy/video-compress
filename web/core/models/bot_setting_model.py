@@ -12,3 +12,8 @@ class BotSettingModel(models.Model):
         return f'{self.bot} - {self.key}'
     
 
+
+    class Meta :
+
+        verbose_name = "General Setting"
+        verbose_name_plural = "General Setting"

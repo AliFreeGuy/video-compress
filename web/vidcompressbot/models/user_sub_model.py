@@ -51,5 +51,5 @@ class SubVidModel(models.Model):
     
     class Meta :
 
-        verbose_name = "User Subscription"
-        verbose_name_plural = "User Subscription"
+        verbose_name = "Vid User Subscription"
+        verbose_name_plural = "Vid User Subscription"

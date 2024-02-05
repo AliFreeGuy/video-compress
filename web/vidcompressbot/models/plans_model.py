@@ -18,7 +18,7 @@ class VidPlanModel(models.Model):
         return str(self.name)
     
 
-    class Meta:
-        verbose_name = 'Plan'
+    class Meta :
 
-    
+        verbose_name = "Vid Plans"
+        verbose_name_plural = "Vid Plans"

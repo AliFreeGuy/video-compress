@@ -13,3 +13,8 @@ class BotModel(models.Model):
 
 
     
+
+    class Meta :
+
+        verbose_name = "My Bots"
+        verbose_name_plural = "My Bots"

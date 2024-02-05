@@ -10,3 +10,9 @@ class SendMessageModel(models.Model):
 
     def __str__(self):
         return str(self.message[:30])
+
+    
+    class Meta :
+
+        verbose_name = "Vid SendMessage"
+        verbose_name_plural = "Vid SendMessage"
