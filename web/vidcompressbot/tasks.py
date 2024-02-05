@@ -23,3 +23,17 @@ def send_message_task(msg_id):
 
     except Exception as e :
         return e
+    
+
+
+
+@shared_task
+def send_quick_message(chat_id , message ):
+    try :
+
+        bot = BotModel.objects.filter(username = 'vidcompressbot').first()
+        res  = send_message(chat_id=int(chat_id)  , message=message ,bot_token=bot.token)
+        print(res)
+
+    except Exception as e :
+        return e 

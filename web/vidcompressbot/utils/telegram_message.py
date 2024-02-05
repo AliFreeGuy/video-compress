@@ -3,7 +3,7 @@ from django.conf import settings
 
 def send_message(chat_id , message, bot_token ):
         try :
-            if settings.DEBUG :
+            if settings.DEBUG == False:
                 url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
                 payload = {'chat_id': chat_id,'text': message}
                 return  requests.post(url, data=payload )
