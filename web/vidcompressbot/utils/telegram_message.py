@@ -7,7 +7,7 @@ def send_message(chat_id , message, bot_token ):
                 url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
                 payload = {'chat_id': chat_id,'text': message}
                 return  requests.post(url, data=payload )
-            return 'debug is on : sended message'  
+            return f'debug is on : sended message : {message}'  
         except Exception as e :
             return e
 
