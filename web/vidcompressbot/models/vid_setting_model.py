@@ -18,6 +18,7 @@ class VidSettingModel(models.Model):
     restrict_saving_content = models.BooleanField(default = False)
     actication_sub_tex =models.TextField(default = 'خالی')
     user_not_active_text = models.TextField(default = 'خالی')
+    watermark_text = models.CharField(max_length = 32 ,default = 'خالی' )
 
 
 
