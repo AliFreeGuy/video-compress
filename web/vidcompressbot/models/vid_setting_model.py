@@ -6,6 +6,7 @@ from core.models import BotModel
 
 class VidSettingModel(models.Model):
     bot = models.ForeignKey(BotModel , on_delete = models.CASCADE , verbose_name = 'telegram bot')
+    video_limit = models.IntegerField(default = 500)
     is_active = models.BooleanField(default = True , verbose_name = 'bot status')
     not_active_text = models.TextField(default = 'خالی'  , verbose_name = 'bot text off')
     admin_chat_id = models.IntegerField(verbose_name = 'chat_id admin')
