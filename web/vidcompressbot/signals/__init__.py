@@ -1,2 +1,3 @@
 from .send_message_signal import send_message_signal
 from .activation_sub import activation_user_sub_notification
+from .add_free_sub import add_free_sub_for_new_user
