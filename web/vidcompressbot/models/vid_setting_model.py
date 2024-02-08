@@ -17,9 +17,11 @@ class VidSettingModel(models.Model):
     video_compressor_text = models.TextField(default = 'خالی')
     start_text = models.TextField(default = 'خالی' )
     restrict_saving_content = models.BooleanField(default = False)
-    actication_sub_tex =models.TextField(default = 'خالی')
+    actication_sub_tex =models.TextField()
     user_not_active_text = models.TextField(default = 'خالی')
-    watermark_text = models.CharField(max_length = 32 ,default = 'خالی' )
+    watermark_text = models.CharField(max_length = 32 ,null = True , blank = True)
+    channel_url  = models.CharField(max_length = 128 , null = True , blank = True)
+    channel_chat_id  = models.IntegerField( null = True , blank = True)
 
 
 
