@@ -16,9 +16,8 @@ def send_message_task(msg_id):
             users = msg.user.all()
             
             for user in users :
-                res = send_message(chat_id=int(user.user.chat_id) , message=msg , bot_token=bot.token)
-                print(res)
-                time.sleep(0.5)
+                res = send_message(chat_id=int(user.user.chat_id) , message=msg.message , bot_token=bot.token)
+                time.sleep(0.2)
             return True
         
 
