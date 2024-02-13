@@ -1,6 +1,6 @@
 from django.db import models
 from core.models import BotModel
-
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 
@@ -22,8 +22,24 @@ class VidSettingModel(models.Model):
     watermark_text = models.CharField(max_length = 32 ,null = True , blank = True)
     channel_url  = models.CharField(max_length = 128 , null = True , blank = True)
     channel_chat_id  = models.IntegerField( null = True , blank = True)
-
-
+    quality_1 = models.IntegerField(
+        validators=[
+            MinValueValidator(100),
+            MaxValueValidator(500)
+        ]
+     , default = 100)
+    quality_2 = models.IntegerField(
+        validators=[
+            MinValueValidator(100),
+            MaxValueValidator(500)
+        ]
+    , default = 100)
+    quality_3 = models.IntegerField(
+        validators=[
+            MinValueValidator(100),
+            MaxValueValidator(500)
+        ]
+    , default = 100)
 
 
     def __str__(self) -> str:
