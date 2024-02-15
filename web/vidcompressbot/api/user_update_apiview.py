@@ -30,12 +30,6 @@ class UserUpdateAPIView(APIView):
             if request.data.get('full_name'):
                 user.full_name = request.data.get('full_name')
                 user.save()
-
-            print('##########################################')
-            print(user.user_vid.sub_updater())
-
-            print('##########################################')
-
             return Response(UserSerializer(user).data, status=status.HTTP_200_OK)
 
         except ValidationError as e:
