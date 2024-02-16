@@ -22,6 +22,7 @@ class VidSettingModel(models.Model):
     watermark_text = models.CharField(max_length = 32 ,null = True , blank = True)
     channel_url  = models.CharField(max_length = 128 , null = True , blank = True)
     channel_chat_id  = models.IntegerField( null = True , blank = True)
+    join_channel_text = models.TextField(default = 'خالی')
     quality_1 = models.IntegerField(
         validators=[
             MinValueValidator(100),
