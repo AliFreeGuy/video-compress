@@ -6,10 +6,10 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 class VidSettingModel(models.Model):
     bot = models.ForeignKey(BotModel , on_delete = models.CASCADE , verbose_name = 'telegram bot')
-    video_limit = models.IntegerField(default = 500)
+    video_limit = models.BigIntegerField(default = 500)
     is_active = models.BooleanField(default = True , verbose_name = 'bot status')
     not_active_text = models.TextField(default = 'خالی'  , verbose_name = 'bot text off')
-    admin_chat_id = models.IntegerField(verbose_name = 'chat_id admin')
+    admin_chat_id = models.BigIntegerField(verbose_name = 'chat_id admin')
     support_id = models.CharField(max_length = 128 ,default = 'خالی' )
     support_text= models.TextField(default = 'خالی')
     help_text = models.TextField(default = 'خالی' )
@@ -21,7 +21,7 @@ class VidSettingModel(models.Model):
     user_not_active_text = models.TextField(default = 'خالی')
     watermark_text = models.CharField(max_length = 32 ,null = True , blank = True)
     channel_url  = models.CharField(max_length = 128 , null = True , blank = True)
-    channel_chat_id  = models.IntegerField( null = True , blank = True)
+    channel_chat_id  = models.BigIntegerField( null = True , blank = True)
     join_channel_text = models.TextField(default = 'خالی')
     quality_1 = models.IntegerField(
         validators=[

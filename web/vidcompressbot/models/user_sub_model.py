@@ -10,8 +10,8 @@ class SubVidModel(models.Model):
     user = models.ForeignKey(UserVid , on_delete=models.CASCADE , related_name='sub' , null=True , blank=True)
     plan= models.ForeignKey(VidPlanModel , on_delete=models.CASCADE  , null=True , blank=True)
     expiry = models.DateTimeField(null=True , blank=True)
-    volum = models.IntegerField(default=0 , null= True , blank=True)
-    volum_used = models.IntegerField(default=0 , null=True , blank = True)
+    volum = models.BigIntegerField(default=0 , null= True , blank=True)
+    volum_used = models.BigIntegerField(default=0 , null=True , blank = True)
     is_active = models.BooleanField(default=True)
 
 

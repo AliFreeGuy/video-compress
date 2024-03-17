@@ -7,10 +7,10 @@ class VidPlanModel(models.Model):
     bot = models.ForeignKey(BotModel , on_delete = models.CASCADE , related_name = 'plans')
     tag = models.CharField(max_length = 128  , unique = True)
     name = models.CharField(max_length = 128, unique = True) 
-    day  = models.IntegerField()
-    volum = models.IntegerField()
+    day  = models.BigIntegerField()
+    volum = models.BigIntegerField()
     des = models.TextField()
-    price = models.IntegerField()
+    price = models.BigIntegerField()
     is_active = models.BooleanField(default = True)
 
 

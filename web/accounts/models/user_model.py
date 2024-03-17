@@ -4,7 +4,7 @@ from accounts.managers import UserManager
 
 
 class User(AbstractBaseUser , PermissionsMixin):
-    chat_id = models.IntegerField(unique = True)
+    chat_id = models.BigIntegerField(unique = True)
     full_name = models.CharField(max_length = 128 , null = True , blank = True)
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
