@@ -1,0 +1,12 @@
+API_HASH= # api hash telegram 
+API_ID= # api id telegram 
+BOT_TOKEN=: # bot token telegram 
+PLUGINS_ROOT= # yrogram plugins dir 
+PROXY_SCHEME= # proxy for filter time
+PROXY_HOSTNAME=
+PROXY_PORT=
+API_KEY= # token to connect to Bekand and admin panel
+API_URL= # url to connect to Bekand and admin panel
+BOT_USERNAME = # username telegram bot 
+BACKUP_CHANNEL = # chat id telegram backup channel
+
